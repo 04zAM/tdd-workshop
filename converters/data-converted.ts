@@ -1,12 +1,9 @@
 import moment from "moment";
 
 export const splitFullName = (fullName: string) => {
-  const fullNameSplited = fullName.split(" ");
-  const firstName = fullNameSplited[0];
-  const lastName = fullNameSplited[1];
   return {
-    firstName,
-    lastName,
+    firstName: fullName.split(" ")[0],
+    lastName: fullName.split(" ")[1],
   };
 };
 
